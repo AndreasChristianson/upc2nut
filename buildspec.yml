@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo install started on `date`
+      - npm install
+  pre_build:
+    commands:
+      - echo test started on `date`
+      - npm test
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the es6 code
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+cache:
+  paths:
+    - 'node_modules/**/*'
+artifacts:
+  files:
+    - 'dist/**/*'

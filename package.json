@@ -1,0 +1,41 @@
+{
+  "name": "upc2nut",
+  "version": "1.0.0",
+  "description": "upc nutritional info lookup",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "ignore": [
+      "**/*.test.js",
+      "**/*.spec.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sullage/upc2nut.git"
+  },
+  "author": "Andreas Christianson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sullage/upc2nut/issues"
+  },
+  "homepage": "https://github.com/Sullage/upc2nut#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "jest-cli": "^22.4.3"
+  },
+  "dependencies": {
+    "node-fetch": "^2.1.2"
+  }
+}
