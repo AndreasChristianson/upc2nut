@@ -1,7 +1,8 @@
-import fetch from 'node-fetch';
+import fetchGoogle from './fetch-google';
 
 
 export default async (event, context, callback) => {
 
-  callback(null, 'hello world!');
+  const google = await fetchgoogle();
+  callback(null, ['hello world!', google]);
 }
