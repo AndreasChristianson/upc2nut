@@ -23,4 +23,4 @@ cache:
 artifacts:
   type: zip
   files:
-    - 'dist/'
+    - 'dist/**/*'
